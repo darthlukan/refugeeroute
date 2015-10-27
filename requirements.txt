@@ -1,0 +1,4 @@
+Flask>=0.10.1
+requests>=2.8.0
+pytest>=2.8.2
+pytest-pep8>=1.0.6
