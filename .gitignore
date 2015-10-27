@@ -1,4 +1,5 @@
 .git
+.ropeproject
 
 cache
 __pycache__
