@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title  %}Refugee Route{% endblock %}</title>
+        {% block imports %}
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/main.css')}}" />
+        <script type="text/javascript" src="{{url_for('static', filename='scripts/main.js')}}"></script>
+        {% endblock %}
+    </head>
+    <body>
+        <div class="nav">
+            {%block nav %}{% endblock %}
+        </div>
+
+        <div class="main">
+            {% block content %}{% endblock %}
+        </div>
+
+        <div class="footer">
+            {% block footer %}{% endblock %}
+        </div>
+    </body>
+</html>
