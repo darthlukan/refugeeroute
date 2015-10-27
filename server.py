@@ -8,6 +8,7 @@ app.config.from_object(__name__)
 app.config.update(dict(SECRET_KEY=DEV_KEY))
 
 
+# Can move to class based views/routers as needed
 @app.route('/', methods=['GET'])
 def root():
     data = {'status': 200, 'message': 'OK!'}
